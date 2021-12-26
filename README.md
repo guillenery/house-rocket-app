@@ -32,13 +32,14 @@
 </ul>
 
 <h2> 🛠 3 - Solution Strategy </h2>
-<b>Step 01:</b>
-<b>Step 02:</b>
-<b>Step 03:</b>
-<b>Step 04:</b>
-<b>Step 05:</b>
-<b>Step 06:</b>
-
+<ul>
+  <li><b>Step 01:</b></li>
+  <li><b>Step 02:</b></li>
+  <li><b>Step 03:</b></li>
+  <li><b>Step 04:</b></li>
+  <li><b>Step 05:</b></li>
+  <li><b>Step 06:</b></li>
+</ul>
 
 <h2> 📊 4 - Main Insights </h2>
 
