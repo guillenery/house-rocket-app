@@ -33,12 +33,13 @@
 
 <h2> 🛠 3 - Solution Strategy </h2>
 <ul>
-  <li><b>Step 01:</b></li>
-  <li><b>Step 02:</b></li>
-  <li><b>Step 03:</b></li>
-  <li><b>Step 04:</b></li>
-  <li><b>Step 05:</b></li>
-  <li><b>Step 06:</b></li>
+  <li><b>Step 01: Fix datatypes in the dataframe and adjust the data that needs to be adjusted.</b></li>
+  <li><b>Step 02: Plot the information in maps to visually understand the market distribution over prices and several features.</b></li>
+  <li><b>Step 03: Organize general market data using tables and graphs, such as price distribution and house aging.</b></li>
+  <li><b>Step 04: Build insights to define what houses HR should buy, usually houses that are under the price range for a given region.</b></li>
+  <li><b>Step 05: Set a strategy considering seasonal price changes in the market (hypotetical)</b></li>
+  <li><b>Step 06: Organize the information in an interactive page with filters using Streamlit</b></li>
+  <li><b>Step 07: Publish it on Heroku cloud for more democratic access</b></li>
 </ul>
 
 <h2> 📊 4 - Main Insights </h2>
