@@ -283,5 +283,3 @@ if __name__ == "__main__":
     set_commercial( data )
     
     set_phisical( data )
-
-

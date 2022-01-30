@@ -117,7 +117,10 @@ def data_overview(data):
 
     st.dataframe(data)
 
-    c1, c2 = st.columns((1, 1) )  
+    return None
+
+def data_analysis(data):
+    c1, c2 = st.columns((1,1))
 
     #Metrics using mean
     df1 = data[['id', 'zipcode']].groupby( 'zipcode' ).count().reset_index()
@@ -221,6 +224,7 @@ if __name__ == "__main__":
 
     #Extract Data
     data = get_data(path)
+    data_2 = data.copy()
     geofile = get_geofile(url)
 
     #Transform Data
@@ -230,6 +234,7 @@ if __name__ == "__main__":
     headers()
     set_maps(data, geofile)
     data_overview(data)
+    data_analysis(data) #Extend the data filters to the Descriptive Analysis column
     physical_attributes(data)
     buying_insights(data)
     selling_insights()

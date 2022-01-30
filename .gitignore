@@ -130,3 +130,6 @@ dmypy.json
 .DS_Store
 meigapp.py
 meigapp.py
+.vscode/settings.json
+v03_streamlit_app_dashboard-1.py
+v03_streamlit_app_dashboard-1.py
