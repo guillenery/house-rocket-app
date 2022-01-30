@@ -179,13 +179,22 @@ def physical_attributes(data):
 
     return None
 
-def under_dev():
+def buying_insights(data):
     st.header('Buying Insights')
-    st.write('What homes should House Rocket buy and for how much?')
+    st.subheader('What homes should House Rocket buy and for how much?')
+    st.write('For each region (zipcode), I suggest House Rocket to buy those with prices under the region`s median, in good condition only.')
     st.info('🛠 Under development')
+    return None
 
+def selling_insights():
     st.header('Selling Insights')
-    st.write('When should House Rocket sell the homes it bought, and what should the company charge?')
+    st.subheader('When should House Rocket sell the homes it bought, and what should the company charge?')
+    st.write('For each region (zipcode), I will analyze the prices transacted by season of the year. The idea is to find the best seasons to buy (lower prices) and to sell (higher prices)')
+    st.write('These differences in price should guide House Rocket on pricing strategies.')
+    st.write('1 - If the buying price is higher than the region median price in a given season, should sell it for purschase price + 10%')
+    st.write('2 - If the buying price is lower than the region median price in a given season, should sell it for purschase price + 30%')
+
+    
     st.info('🛠 Under development')
 
     return None
@@ -206,4 +215,5 @@ if __name__ == "__main__":
     headers()
     set_maps(data, geofile)
     data_overview(data)
-    under_dev()
+    buying_insights(data)
+    selling_insights()
