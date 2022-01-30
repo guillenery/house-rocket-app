@@ -1,15 +1,17 @@
 import folium
 import geopandas
-import numpy as np
-import pandas as pd
-import streamlit as st
-from folium.plugins import MarkerCluster
-from streamlit_folium import folium_static
+import numpy            as np
+import pandas           as pd
+import streamlit        as st
+from folium.plugins     import MarkerCluster
+from streamlit_folium   import folium_static
 
 #Page layout
 st.set_page_config(layout='wide')
 
-#Helper Functions
+# --------------
+# Helper Functions
+# --------------
 
 @st.cache(allow_output_mutation=True)
 def get_data(path):
@@ -163,7 +165,6 @@ def data_graphs(data):
     yr_built_grouped = df['price'].groupby(df['yr_built']).mean().reset_index()
     return None
 
-
 def commercial_attributes(data):
 
     c2, c1 = st.columns((1, 1))  
@@ -188,7 +189,6 @@ def under_dev():
     st.info('🛠 Under development')
 
     return None
-#Extract Data
 
 if __name__ == "__main__":
 
@@ -207,5 +207,3 @@ if __name__ == "__main__":
     set_maps(data, geofile)
     data_overview(data)
     under_dev()
-
-    
