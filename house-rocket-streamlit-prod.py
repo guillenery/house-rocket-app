@@ -167,6 +167,11 @@ def data_graphs(data):
 
 def commercial_attributes(data):
 
+
+    st.header('Commercial Attributes')
+    st.subheader('Price distribution')
+    st.info('🛠 Under development')
+
     c2, c1 = st.columns((1, 1))  
     c1.subheader('Average prices by the year of renovation')
     c1.line_chart(yr_renov_group.set_index('yr_renovated'), height=300)
@@ -176,6 +181,16 @@ def commercial_attributes(data):
     return None
 
 def physical_attributes(data):
+
+    st.header('Physical Attributes')
+    st.subheader('# or houses by # of bedrooms')
+    st.info('🛠 Under development')
+    st.subheader('# or houses by # of bathrooms')
+    st.info('🛠 Under development')
+    st.subheader('# or houses by # of floors')
+    st.info('🛠 Under development')
+    st.subheader('# or houses by waterview or not')
+    st.info('🛠 Under development')
 
     return None
 
@@ -215,5 +230,6 @@ if __name__ == "__main__":
     headers()
     set_maps(data, geofile)
     data_overview(data)
+    physical_attributes(data)
     buying_insights(data)
     selling_insights()
